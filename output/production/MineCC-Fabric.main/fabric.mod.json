@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "minecc",
+	"version": "${version}",
+	"name": "MineCC",
+	"description": "Simple utility mod for Minecraft!",
+	"authors": [
+		"MinenMaster"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/MinenMaster/MineCC"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minecc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.MineCC"
+		],
+		"client": [
+			"name.modid.MineCCClient"
+		]
+	},
+	"mixins": [
+		"minecc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
