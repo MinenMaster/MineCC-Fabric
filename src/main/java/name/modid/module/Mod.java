@@ -4,6 +4,7 @@ import net.minecraft.client.MinecraftClient;
 
 public class Mod {
     private String name;
+    private String displayName;
     private String description;
     public Category category;
     private int key;
@@ -11,8 +12,9 @@ public class Mod {
 
     protected MinecraftClient mc = MinecraftClient.getInstance();
 
-    public Mod(String name, String description, Category category) {
+    public Mod(String name, String displayName, String description, Category category) {
         this.name = name;
+        this.displayName = displayName;
         this.description = description;
         this.category = category;
     }
@@ -53,6 +55,14 @@ public class Mod {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 
     public String getDescription() {
