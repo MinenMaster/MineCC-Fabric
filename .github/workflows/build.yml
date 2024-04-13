@@ -28,6 +28,8 @@ jobs:
           distribution: 'microsoft'
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
+      - name: genSource
+        run: ./gradlew genSource
       - name: build
         run: ./gradlew build
       - name: capture build artifacts

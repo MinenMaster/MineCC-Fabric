@@ -1,2 +1,2 @@
 # MineCC-Fabric
-MineCC is a simple client for basic "hacking"
+Simple utility mod for Minecraft!
