@@ -23,7 +23,11 @@
 		]
 	},
 	"mixins": [
-		"minecc.mixins.json"
+		"minecc.mixins.json",
+		{
+			"config": "minecc.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.9",
