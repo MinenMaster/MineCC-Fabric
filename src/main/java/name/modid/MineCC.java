@@ -33,7 +33,7 @@ public class MineCC implements ModInitializer {
 	}
 
 	public void onTick() {
-		if (mc.player == null) {
+		if (mc.player != null) {
 			for (Mod module : ModuleManager.INSTANCE.getEnabledModules()) {
 				module.onTick();
 			}
