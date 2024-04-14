@@ -2,6 +2,7 @@ package name.modid;
 
 import name.modid.module.Mod;
 import name.modid.module.ModuleManager;
+import name.modid.ui.screens.clickgui.ClickGUI;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.client.MinecraftClient;
@@ -28,6 +29,10 @@ public class MineCC implements ModInitializer {
 				if (key == module.getKey()) {
 					module.toggle();
 				}
+			}
+
+			if (key == GLFW.GLFW_KEY_RIGHT_SHIFT) {
+				mc.setScreen(ClickGUI.INSTANCE);
 			}
 		}
 	}
