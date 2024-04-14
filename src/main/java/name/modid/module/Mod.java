@@ -42,11 +42,17 @@ public class Mod {
     }
 
     public enum Category {
-        COMBAT,
-        MOVEMENT,
-        RENDER,
-        WORLD,
-        MISC
+        COMBAT("Combat"),
+        MOVEMENT("Movement"),
+        RENDER("Render"),
+        WORLD("World"),
+        MISC("Misc");
+
+        public String name;
+
+        private Category(String name) {
+            this.name = name;
+        }
     }
 
     public String getName() {
