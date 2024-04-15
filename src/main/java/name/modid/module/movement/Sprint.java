@@ -4,6 +4,7 @@ import name.modid.module.Mod;
 import org.lwjgl.glfw.GLFW;
 
 public class Sprint extends Mod {
+
     public Sprint() {
         super("Sprint", "Sprint", "Automatically sprints", Category.MOVEMENT);
         this.setKey(GLFW.GLFW_KEY_LEFT_CONTROL);

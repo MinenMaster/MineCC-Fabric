@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModuleManager {
+
     public static final ModuleManager INSTANCE = new ModuleManager();
     private List<Mod> modules = new ArrayList<>();
 
