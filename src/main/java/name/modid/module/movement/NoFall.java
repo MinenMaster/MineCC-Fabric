@@ -16,6 +16,22 @@ public class NoFall extends Mod {
     public void onTick() {
         ClientPlayerEntity player = mc.player;
 
+        // do nothing in creative mode
+        if (player.isCreative()) {
+            return;
+        }
+
+        // pause when flying with elytra
+        boolean fallFlying = player.isFallFlying();
+        if (fallFlying) {
+            return;
+        }
+
+        // ignore small falls that can't cause damage
+        if (player.fallDistance <= (fallFlying ? 1 : 2))
+            return;
+
+        player.fallDistance = 0;
         player.networkHandler.sendPacket(new OnGroundOnly(true));
 
         super.onTick();
