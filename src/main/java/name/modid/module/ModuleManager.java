@@ -1,6 +1,7 @@
 package name.modid.module;
 
 import name.modid.module.movement.Flight;
+import name.modid.module.movement.NoFall;
 import name.modid.module.movement.Sprint;
 
 import java.util.ArrayList;
@@ -33,5 +34,6 @@ public class ModuleManager {
     private void addModules() {
         modules.add(new Flight());
         modules.add(new Sprint());
+        modules.add(new NoFall());
     }
 }
