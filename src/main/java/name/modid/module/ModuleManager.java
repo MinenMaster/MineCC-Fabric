@@ -3,6 +3,7 @@ package name.modid.module;
 import name.modid.module.movement.Flight;
 import name.modid.module.movement.NoFall;
 import name.modid.module.movement.Sprint;
+import name.modid.module.world.FastUse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,5 +37,6 @@ public class ModuleManager {
         modules.add(new Flight());
         modules.add(new Sprint());
         modules.add(new NoFall());
+        modules.add(new FastUse());
     }
 }
