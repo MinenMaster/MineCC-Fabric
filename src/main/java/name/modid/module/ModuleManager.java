@@ -33,6 +33,18 @@ public class ModuleManager {
         return enabledModules;
     }
 
+    public List<Mod> getModulesInCategory(Mod.Category category) {
+        List<Mod> modulesInCategory = new ArrayList<>();
+
+        for (Mod module : modules) {
+            if (module.getCategory() == category) {
+                modulesInCategory.add(module);
+            }
+        }
+
+        return modulesInCategory;
+    }
+
     private void addModules() {
         modules.add(new Flight());
         modules.add(new Sprint());
