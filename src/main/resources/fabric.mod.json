@@ -3,23 +3,22 @@
 	"id": "minecc",
 	"version": "${version}",
 	"name": "MineCC",
-	"description": "Simple utility mod for Minecraft!",
+	"description": "Simple utility mod!",
 	"authors": [
 		"MinenMaster"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/MinenMaster/MineCC"
+		"issues": "https://github.com/MinenMaster/MineCC-Fabric/issues",
+		"sources": "https://github.com/MinenMaster/MineCC",
+		"discord": "@minenmaster"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/minecc/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"name.modid.MineCC"
-		],
 		"client": [
-			"name.modid.MineCCClient"
+			"name.modid.MineCC"
 		]
 	},
 	"mixins": [
@@ -29,6 +28,13 @@
 			"environment": "client"
 		}
 	],
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "@minenmaster"
+			}
+		}
+	},
 	"depends": {
 		"fabricloader": ">=0.15.9",
 		"minecraft": "~1.20.4",
@@ -36,6 +42,6 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"meteor-client": "*"
 	}
 }
