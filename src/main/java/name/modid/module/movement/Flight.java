@@ -24,8 +24,10 @@ public class Flight extends Mod {
 
     @Override
     public void onDisable() {
-        mc.player.getAbilities().setFlySpeed(0.05F);
-        mc.player.getAbilities().flying = false;
+        if (!mc.player.isSpectator()) {
+            mc.player.getAbilities().setFlySpeed(0.05F);
+            mc.player.getAbilities().flying = false;
+        }
         super.onDisable();
     }
 }
