@@ -21,6 +21,15 @@ public class ModuleManager {
         return modules;
     }
 
+    public Mod getModule(Class<? extends Mod> moduleClass) {
+        for (Mod module : getModules()) {
+            if (moduleClass.isInstance(module)) {
+                return module;
+            }
+        }
+        return null;
+    }
+
     public List<Mod> getEnabledModules() {
         List<Mod> enabledModules = new ArrayList<>();
 
