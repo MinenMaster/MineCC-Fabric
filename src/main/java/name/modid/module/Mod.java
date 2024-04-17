@@ -3,6 +3,7 @@ package name.modid.module;
 import net.minecraft.client.MinecraftClient;
 
 public class Mod {
+
     private String name;
     private String displayName;
     private String description;
