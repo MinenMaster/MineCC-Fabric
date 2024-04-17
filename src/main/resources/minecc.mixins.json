@@ -7,7 +7,8 @@
     "InGameHudMixin",
     "KeyboardMixin",
     "MinecraftClientMixin",
-    "PlayerMoveC2SPacketAccessor"
+    "PlayerMoveC2SPacketAccessor",
+    "ClientPlayerEntityAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
