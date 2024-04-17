@@ -3,24 +3,22 @@ package name.modid;
 import name.modid.module.Mod;
 import name.modid.module.ModuleManager;
 import name.modid.ui.screens.clickgui.ClickGUI;
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 
 import net.minecraft.client.MinecraftClient;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MineCC implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
+public class MineCC implements ClientModInitializer {
+
     public static final Logger LOGGER = LoggerFactory.getLogger("minecc");
 	public static final MineCC INSTANCE = new MineCC();
 
 	private MinecraftClient mc = MinecraftClient.getInstance();
 
 	@Override
-	public void onInitialize() {
+	public void onInitializeClient() {
 	}
 
 	public void onKeyPress(int key, int action) {
