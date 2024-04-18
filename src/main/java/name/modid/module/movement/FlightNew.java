@@ -1,5 +1,6 @@
 package name.modid.module.movement;
 
+import name.modid.events.EventHandler;
 import name.modid.events.packets.PacketEvent;
 import name.modid.mixin.ClientPlayerEntityAccessor;
 import name.modid.mixin.PlayerMoveC2SPacketAccessor;
@@ -89,6 +90,7 @@ public class FlightNew extends Mod {
     }
 
     // ServerPlayNetworkHandler#onPlayerMove(PlayerMoveC2SPacket)
+    @EventHandler
     private void onSendPacket(PacketEvent.Send event) {
         if (!(event.packet instanceof PlayerMoveC2SPacket packet)) return;
 

@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "minecc",
+	"id": "novaclient",
 	"version": "${version}",
-	"name": "MineCC",
-	"description": "Simple utility mod!",
+	"name": "NovaClient",
+	"description": "Simple utility mod",
 	"authors": [
 		"MinenMaster"
 	],
@@ -14,19 +14,15 @@
 		"discord": "@minenmaster"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/minecc/icon.png",
+	"icon": "assets/novaclient/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"client": [
-			"name.modid.MineCC"
+		"main": [
+			"name.modid.NovaClient"
 		]
 	},
 	"mixins": [
-		"minecc.mixins.json",
-		{
-			"config": "minecc.client.mixins.json",
-			"environment": "client"
-		}
+		"novaclient.mixins.json"
 	],
 	"custom": {
 		"modmenu": {
@@ -36,12 +32,12 @@
 		}
 	},
 	"depends": {
-		"fabricloader": ">=0.15.9",
+		"fabricloader": ">=0.15.10",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"meteor-client": "*"
+		"another-mod": "*"
 	}
 }

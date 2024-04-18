@@ -1,6 +1,6 @@
 package name.modid.mixin;
 
-import name.modid.MineCC;
+import name.modid.NovaClient;
 import net.minecraft.client.Keyboard;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,6 +12,6 @@ public class KeyboardMixin {
 
     @Inject(method = "onKey", at = @At("HEAD"), cancellable = true)
     public void onKey(long window, int key, int scancode, int action, int modifiers, CallbackInfo ci) {
-        MineCC.INSTANCE.onKeyPress(key, action);
+        NovaClient.INSTANCE.onKeyPress(key, action);
     }
 }

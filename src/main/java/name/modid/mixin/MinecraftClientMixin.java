@@ -1,6 +1,6 @@
 package name.modid.mixin;
 
-import name.modid.MineCC;
+import name.modid.NovaClient;
 import name.modid.module.Mod;
 import name.modid.module.ModuleManager;
 import name.modid.module.world.FastUse;
@@ -21,24 +21,27 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 @Mixin(MinecraftClient.class)
 public abstract class MinecraftClientMixin {
 
-    @Unique private boolean doItemUseCalled;
+    @Unique
+    private boolean doItemUseCalled;
     @Unique private boolean rightClick;
 
-    @Shadow protected abstract void doItemUse();
+    @Shadow
+    protected abstract void doItemUse();
     @Shadow public abstract Profiler getProfiler();
 
-    @Shadow @Nullable public ClientPlayerInteractionManager interactionManager;
+    @Shadow @Nullable
+    public ClientPlayerInteractionManager interactionManager;
 
     @Shadow private int itemUseCooldown;
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void onInit(CallbackInfo info) {
-        MineCC.INSTANCE.onInitializeClient();
+        NovaClient.INSTANCE.onInitialize();
     }
 
     @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
     private void onTick(CallbackInfo ci) {
-        MineCC.INSTANCE.onTick();
+        NovaClient.INSTANCE.onTick();
     }
 
     @Inject(method = "doItemUse", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isItemEnabled(Lnet/minecraft/resource/featuretoggle/FeatureSet;)Z"), locals = LocalCapture.CAPTURE_FAILHARD)
