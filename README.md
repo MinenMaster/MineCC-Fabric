@@ -1,2 +1,2 @@
-# MineCC-Fabric
+# NovaClient
 Simple utility mod for Minecraft!
