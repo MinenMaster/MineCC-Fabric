@@ -1,7 +1,7 @@
-package name.modid.events.sphere;
+package name.modid.events.space;
 
-import name.modid.events.sphere.listeners.IListener;
-import name.modid.events.sphere.listeners.LambdaListener;
+import name.modid.events.space.listeners.IListener;
+import name.modid.events.space.listeners.LambdaListener;
 
 public interface IEventBus {
     /**

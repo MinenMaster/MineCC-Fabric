@@ -1,6 +1,6 @@
-package name.modid.module.world;
+package name.modid.modules.world;
 
-import name.modid.module.Mod;
+import name.modid.modules.Mod;
 import net.minecraft.item.ItemStack;
 import org.lwjgl.glfw.GLFW;
 

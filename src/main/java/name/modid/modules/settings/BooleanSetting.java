@@ -1,4 +1,4 @@
-package name.modid.module.settings;
+package name.modid.modules.settings;
 
 public class BooleanSetting extends Setting {
 

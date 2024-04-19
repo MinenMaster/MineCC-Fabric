@@ -1,9 +1,9 @@
-package name.modid.module;
+package name.modid.modules;
 
-import name.modid.module.movement.FlightNew;
-import name.modid.module.movement.NoFall;
-import name.modid.module.movement.Sprint;
-import name.modid.module.world.FastUse;
+import name.modid.modules.movement.FlightNew;
+import name.modid.modules.movement.NoFall;
+import name.modid.modules.movement.Sprint;
+import name.modid.modules.world.FastUse;
 
 import java.util.ArrayList;
 import java.util.List;

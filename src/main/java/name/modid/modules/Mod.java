@@ -1,4 +1,4 @@
-package name.modid.module;
+package name.modid.modules;
 
 import net.minecraft.client.MinecraftClient;
 

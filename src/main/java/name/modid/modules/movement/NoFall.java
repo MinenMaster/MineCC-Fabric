@@ -1,10 +1,10 @@
-package name.modid.module.movement;
+package name.modid.modules.movement;
 
-import name.modid.events.EventHandler;
+import name.modid.events.space.EventHandler;
 import name.modid.events.packets.PacketEvent;
 import name.modid.mixin.PlayerMoveC2SPacketAccessor;
-import name.modid.module.Mod;
-import name.modid.module.ModuleManager;
+import name.modid.modules.Mod;
+import name.modid.modules.ModuleManager;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import org.lwjgl.glfw.GLFW;

@@ -1,6 +1,6 @@
-package name.modid.events.sphere.listeners;
+package name.modid.events.space.listeners;
 
-import name.modid.events.sphere.EventHandler;
+import name.modid.events.space.EventHandler;
 
 import java.lang.invoke.LambdaMetafactory;
 import java.lang.invoke.MethodHandle;

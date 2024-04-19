@@ -1,6 +1,6 @@
-package name.modid.module.movement;
+package name.modid.modules.movement;
 
-import name.modid.module.Mod;
+import name.modid.modules.Mod;
 import org.lwjgl.glfw.GLFW;
 
 public class Sprint extends Mod {

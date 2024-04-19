@@ -1,4 +1,4 @@
-package name.modid.events.sphere;
+package name.modid.events.space;
 
 public interface ICancellable {
 
