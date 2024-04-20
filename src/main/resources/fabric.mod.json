@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "novaclient",
+	"id": "nova-client",
 	"version": "${version}",
 	"name": "NovaClient",
 	"description": "Simple utility mod",
