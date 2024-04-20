@@ -36,7 +36,7 @@ public abstract class MinecraftClientMixin {
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void onInit(CallbackInfo info) {
-        NovaClient.INSTANCE.onInitialize();
+        NovaClient.INSTANCE.onInitializeClient();
     }
 
     @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
