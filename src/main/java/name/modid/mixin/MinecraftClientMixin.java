@@ -1,9 +1,9 @@
 package name.modid.mixin;
 
 import name.modid.NovaClient;
-import name.modid.module.Mod;
-import name.modid.module.ModuleManager;
-import name.modid.module.world.FastUse;
+import name.modid.modules.Mod;
+import name.modid.modules.ModuleManager;
+import name.modid.modules.world.FastUse;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.item.ItemStack;

@@ -1,8 +1,8 @@
 package name.modid.ui.clickgui;
 
-import name.modid.module.Mod;
-import name.modid.module.Mod.Category;
-import name.modid.module.ModuleManager;
+import name.modid.modules.Mod;
+import name.modid.modules.Mod.Category;
+import name.modid.modules.ModuleManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 

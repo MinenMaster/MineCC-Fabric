@@ -1,13 +1,13 @@
 package name.modid.ui;
 
-import name.modid.module.ModuleManager;
+import name.modid.modules.ModuleManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 
 import java.util.Comparator;
 import java.util.List;
 
-import name.modid.module.Mod;
+import name.modid.modules.Mod;
 
 public class Hud {
 
