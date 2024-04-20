@@ -93,7 +93,7 @@ public class FlightNew extends Mod {
     // ServerPlayNetworkHandler#onPlayerMove(PlayerMoveC2SPacket)
     @EventHandler
     private void onSendPacket(PacketEvent.Send event) {
-        NovaClient.LOGGER.info("onSendPacket");
+        NovaClient.LOGGER.info("Flight: onSendPacket");
         if (!(event.packet instanceof PlayerMoveC2SPacket packet)) return;
 
         double currentY = packet.getY(Double.MAX_VALUE);

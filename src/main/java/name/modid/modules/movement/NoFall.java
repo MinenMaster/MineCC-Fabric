@@ -1,5 +1,6 @@
 package name.modid.modules.movement;
 
+import name.modid.NovaClient;
 import name.modid.events.space.EventHandler;
 import name.modid.events.packets.PacketEvent;
 import name.modid.mixin.PlayerMoveC2SPacketAccessor;
@@ -18,6 +19,7 @@ public class NoFall extends Mod {
 
     @EventHandler
     private void onSendPacket(PacketEvent.Send event) {
+        NovaClient.LOGGER.info("NoFall: onSendPacket");
         ClientPlayerEntity player = mc.player;
 
         if (mc.player.getAbilities().creativeMode || !(event.packet instanceof PlayerMoveC2SPacket)) return;
