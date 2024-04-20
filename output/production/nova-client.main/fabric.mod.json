@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "nova-client",
+	"version": "${version}",
+	"name": "NovaClient",
+	"description": "Simple utility mod",
+	"authors": [
+		"MinenMaster"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"issues": "https://github.com/MinenMaster/MineCC-Fabric/issues",
+		"sources": "https://github.com/MinenMaster/MineCC",
+		"discord": "@minenmaster"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/novaclient/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"name.modid.NovaClient"
+		]
+	},
+	"mixins": [
+		"novaclient.mixins.json"
+	],
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "@minenmaster"
+			}
+		}
+	},
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
