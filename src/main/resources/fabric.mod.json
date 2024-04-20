@@ -17,7 +17,7 @@
 	"icon": "assets/novaclient/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"name.modid.NovaClient"
 		]
 	},

@@ -1,24 +1,22 @@
 package name.modid;
 
-import name.modid.module.Mod;
-import name.modid.module.ModuleManager;
+import name.modid.modules.Mod;
+import name.modid.modules.ModuleManager;
 import name.modid.ui.clickgui.ClickGUI;
-import net.fabricmc.api.ModInitializer;
-
+import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.MinecraftClient;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class NovaClient implements ModInitializer {
+public class NovaClient implements ClientModInitializer {
 
-	public static final Logger LOGGER = LoggerFactory.getLogger("minecc");
+	public static final Logger LOGGER = LoggerFactory.getLogger("nova-client");
 	public static final NovaClient INSTANCE = new NovaClient();
-
-	private MinecraftClient mc = MinecraftClient.getInstance();
+	public static MinecraftClient mc = MinecraftClient.getInstance();
 
 	@Override
-	public void onInitialize() {
+	public void onInitializeClient() {
 	}
 
 	public void onKeyPress(int key, int action) {
