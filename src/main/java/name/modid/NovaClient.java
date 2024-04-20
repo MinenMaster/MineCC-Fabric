@@ -1,5 +1,7 @@
 package name.modid;
 
+import name.modid.events.space.IEventBus;
+import name.modid.events.space.EventBus;
 import name.modid.modules.Mod;
 import name.modid.modules.ModuleManager;
 import name.modid.ui.clickgui.ClickGUI;
@@ -13,6 +15,7 @@ public class NovaClient implements ClientModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("nova-client");
 	public static final NovaClient INSTANCE = new NovaClient();
+	public static final IEventBus EVENT_BUS = new EventBus();
 	public static MinecraftClient mc = MinecraftClient.getInstance();
 
 	@Override
