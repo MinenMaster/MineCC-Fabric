@@ -1,5 +1,6 @@
 package name.modid.modules;
 
+import name.modid.modules.movement.Flight;
 import name.modid.modules.movement.FlightNew;
 import name.modid.modules.movement.NoFall;
 import name.modid.modules.movement.Sprint;
@@ -55,7 +56,7 @@ public class ModuleManager {
     }
 
     private void addModules() {
-        modules.add(new FlightNew());
+        modules.add(new Flight());
         modules.add(new NoFall());
         modules.add(new Sprint());
         modules.add(new FastUse());
