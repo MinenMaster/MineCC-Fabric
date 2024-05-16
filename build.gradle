@@ -17,9 +17,9 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {
-	  name = "meteor-maven"
-	  url = "https://maven.meteordev.org/releases"
-  }
+		name = "meteor-maven"
+		url = "https://maven.meteordev.org/releases"
+	}
 }
 
 dependencies {
